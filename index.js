@@ -8,7 +8,7 @@ const {
   session,
   Markup
 } = require('telegraf');
-const url = "https://gamkart.me/refbot/";
+const url = "https://app-cacd4d01-cdd4-4d60-88cc-acabc38c3f9f.cleverapps.io/";
 const bot = new Telegraf("5332039069:AAHhFF08UCWescUeefqLWvRMYGYYuY1Wt9k");
 bot.use(session());
 bot.start((msg) => {
@@ -447,7 +447,13 @@ mysql.query(sql,
     });}
 });
 bot.telegram.setWebhook(url);
-app.get('/refbot/', (req, res) => res.send('i am out of world!'));
-app.get('/refbot/my/', (req, res) => res.send("hi ".mysql));
-app.use(bot.webhookCallback("/refbot/"));
-app.listen(3000);
+app.get('/', (req, res) => res.send('i am out of world!'));
+app.get('/mysql', (req, res) => {
+
+  mysql.ping((err) => {
+
+        if(err) return res.status(500).send("MySQL Server is Down");
+
+        res.send("MySQL Server is Active");});});
+app.use(bot.webhookCallback("/"));
+app.listen(8080);
