@@ -1,9 +1,15 @@
 const mysql = require('mysql');
 const con = mysql.createConnection({
-  host: '142.132.223.125',
-  user: 'gamkartm_root',
-  password: '@Bittu626',
-  database: 'gamkartm_refbot'
+      port : 21363,
+      host     : process.env.MYSQL_ADDON_HOST,
+
+    	database : process.env.MYSQL_ADDON_DB,
+
+    	user     : process.env.MYSQL_ADDON_USER,
+
+    	password : process.env.MYSQL_ADDON_PASSWORD
+
+  
 });
 var mysql_data;
 con.connect(function(err) {
