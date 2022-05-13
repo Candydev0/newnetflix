@@ -154,8 +154,12 @@ jet();
    
 });
 bot.hears('📞Support', (msg)=> {
-  msg.reply(`⁉️We are Always Ready to Support You .
-    Contact us Here @Natproof_bot`)});
+  msg.replyWithHTML(`<b>Hi Dear,
+If You have Problems than Contact Us @Candydev.</b>`,
+Markup.inlineKeyboard([
+      Markup.button.url("Chat with Developer","https://t.me/Candydev")
+ ])
+)});
 bot.hears('📢 Giveaway', msg => msg.reply('Join For Giveaway @demochannale'));
 bot.hears('💰 Balance', (msg)=> {
   var sql = `SELECT * FROM users WHERE id = ${msg.message.chat.id}`;
