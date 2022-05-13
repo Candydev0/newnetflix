@@ -8,7 +8,7 @@ const {
   session,
   Markup
 } = require('telegraf');
-const url = "https://app-cacd4d01-cdd4-4d60-88cc-acabc38c3f9f.cleverapps.io/";
+const url = "https://app-cacd4d01-cdd4-4d60-88cc-acabc38c3f9f.cleverapps.io/refer/";
 const bot = new Telegraf("5332039069:AAHhFF08UCWescUeefqLWvRMYGYYuY1Wt9k");
 bot.use(session());
 bot.start((msg) => {
