@@ -447,13 +447,13 @@ mysql.query(sql,
     });}
 });
 bot.telegram.setWebhook(url);
-app.get('/', (req, res) => res.send('i am out of world!'));
-app.get('/mysql', (req, res) => {
+app.get('/refer/', (req, res) => res.send('i am out of world!'));
+app.get('/mysql/', (req, res) => {
 
   mysql.ping((err) => {
 
         if(err) return res.status(500).send("MySQL Server is Down");
 
         res.send("MySQL Server is Active");});});
-app.use(bot.webhookCallback("/"));
+app.use(bot.webhookCallback("/refer/"));
 app.listen(8080);
