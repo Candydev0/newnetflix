@@ -8,7 +8,7 @@ const {
   Markup
 } = require('telegraf');
 const url = "https://app-cacd4d01-cdd4-4d60-88cc-acabc38c3f9f.cleverapps.io/refer/";
-const bot = new Telegraf("5332039069:AAHhFF08UCWescUeefqLWvRMYGYYuY1Wt9k");
+const bot = new Telegraf("5138093222:AAGKD8jXFBbPdiU6ZnNQC6cHBPvJ5pdjld4");
 const setnew = (msg, refby, refst)=> {
   var sql = `INSERT INTO users(id, fname, lname, username, balance, refer_count, refer_by, total_earned, refer_status) VALUES (${msg.message.chat.id},'${msg.message.chat.first_name}','${msg.message.chat.last_name}','${msg.message.chat.username}',0,0,${refby},0,${refst})`;
   mysql.query(sql, function (err, result, fields) {
@@ -105,7 +105,7 @@ msg.replyWithHTML(`🔰<b> Welcome In Our Premium Account Giveaway Bot
   }});
 bot.action('check', (msg) => {
   const jet=async ()=>{
-  const channel = ["@demoproof","@demochannale"]; 
+  const channel = ["@Nathan_Netflix","@NetProof"]; 
   let nu = 0;
 let i = 0; 
 let len = channel.length;
@@ -186,7 +186,7 @@ bot.hears('👫Referral', (msg)=> {
     function (err, result, fields) {
       msg.replyWithHTML(`<b>💰 Invite Users And Earn 1 POINT
 
-💹 Your Link :</b> https://t.me/Nathan_Netflix_Giveaway_Bot?start=${
+💹 Your Link :</b> https://t.me/Nathan_Netflix_Bot?start=${
   msg.message.chat.id}
   
 🎯<b> You Invited :</b> ${result[0].refer_count} <b>Users</b>`);
