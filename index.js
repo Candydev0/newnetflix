@@ -34,9 +34,9 @@ mysql.query(sql, function (err, result1, fields) {
 msg.replyWithHTML(`🔰<b> Welcome In Our Premium Account Giveaway Bot
 --------------------------------------------------------
 📑Join Our Payment Proof Channel:</b>
-@demoproof
+@NetProof
 🎉<b>Join Our Giveaway Channel :</b>
-@demochannale
+@Nathan_Netflix
 --------------------------------------------------------
 🛃 <b>Before Using This Bot, After completing all tasks Click on ✅ Check!</b>`, Markup.inlineKeyboard([
                 Markup.button.callback('✅ Check', 'check')
@@ -51,9 +51,9 @@ msg.replyWithHTML(`🔰<b> Welcome In Our Premium Account Giveaway Bot
 
 --------------------------------------------------------
 📑Join Our Payment Proof Channel:</b>
-@demoproof
+@NetProof
 🎉<b>Join Our Giveaway Channel :</b>
-@demochannale
+@Nathan_Netflix
 --------------------------------------------------------
 🛃 <b>Before Using This Bot, After completing all tasks Click on ✅ Check!</b>`, Markup.inlineKeyboard([
                 Markup.button.callback('✅ Check', 'check')
@@ -65,9 +65,9 @@ msg.replyWithHTML(`🔰<b> Welcome In Our Premium Account Giveaway Bot
 msg.replyWithHTML(`🔰<b> Welcome In Our Premium Account Giveaway Bot
 --------------------------------------------------------
 📑Join Our Payment Proof Channel:</b>
-@demoproof
+@NetProof
 🎉<b>Join Our Giveaway Channel :</b>
-@demochannale
+@Nathan_Netflix
 --------------------------------------------------------
 🛃 <b>Before Using This Bot, After completing all tasks Click on ✅ Check!</b>`, Markup.inlineKeyboard([
             Markup.button.callback('✅ Check', 'check')
@@ -81,9 +81,9 @@ msg.replyWithHTML(`🔰<b> Welcome In Our Premium Account Giveaway Bot
 msg.replyWithHTML(`🔰<b> Welcome In Our Premium Account Giveaway Bot
 --------------------------------------------------------
 📑Join Our Payment Proof Channel:</b>
-@demoproof
+@NetProof
 🎉<b>Join Our Giveaway Channel :</b>
-@demochannale
+@Nathan_Netflix
 --------------------------------------------------------
 🛃 <b>Before Using This Bot, After completing all tasks Click on ✅ Check!</b>`, Markup.inlineKeyboard([
             Markup.button.callback('✅ Check', 'check')
@@ -93,9 +93,9 @@ msg.replyWithHTML(`🔰<b> Welcome In Our Premium Account Giveaway Bot
 msg.replyWithHTML(`🔰<b> Welcome In Our Premium Account Giveaway Bot
 --------------------------------------------------------
 📑Join Our Payment Proof Channel:</b>
-@demoproof
+@NetProof
 🎉<b>Join Our Giveaway Channel :</b>
-@demochannale
+@Nathan_Netflix
 --------------------------------------------------------
 🛃 <b>Before Using This Bot, After completing all tasks Click on ✅ Check!</b>`, Markup.inlineKeyboard([
             Markup.button.callback('✅ Check', 'check')
@@ -164,7 +164,7 @@ Markup.inlineKeyboard([
       Markup.button.url("Chat with Developer","https://t.me/Candydev")
  ])
 )});
-bot.hears('📢 Giveaway', msg => msg.reply('Join For Giveaway @demochannale'));
+bot.hears('📢 Giveaway', msg => msg.reply('Join For Giveaway @Nathan_Netflix'));
 bot.hears('💰 Balance', (msg)=> {
   var sql = `SELECT * FROM users WHERE id = ${msg.message.chat.id}`;
 
