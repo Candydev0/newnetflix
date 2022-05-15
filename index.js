@@ -159,7 +159,7 @@ jet();
 });
 bot.hears('📞Support', (msg)=> {
   msg.replyWithHTML(`<b>Hi Dear,
-If You have Problems than Contact Us @Candydev.</b>`,
+If You have Problems than Contact Us @Nathan_ou .</b>`,
 Markup.inlineKeyboard([
       Markup.button.url("Chat with Developer","https://t.me/Candydev")
  ])
