@@ -10,7 +10,7 @@ const {
 const url = "https://app-3d719d27-5f9d-4eb6-b8f8-9abd90562db8.cleverapps.io/refer/";
 const bot = new Telegraf("5138093222:AAGKD8jXFBbPdiU6ZnNQC6cHBPvJ5pdjld4");
 const setnew = (msg, refby, refst)=> {
-  var sql = `INSERT INTO users(id, fname, lname, username, balance, refer_count, refer_by, total_earned, refer_status) VALUES (${msg.message.chat.id},'${msg.message.chat.first_name}','${msg.message.chat.last_name}','${msg.message.chat.username}',0,0,${refby},0,${refst})`;
+  var sql = `INSERT INTO users(id, balance, refer_count, refer_by, total_earned, refer_status) VALUES (${msg.message.chat.id},0,0,${refby},0,${refst})`;
   mysql.query(sql, function (err, result, fields) {
   if (err) msg.reply(err);
   });
